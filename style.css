@@ -1,0 +1,15 @@
+#board-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .cell {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .color-input {
+    width: 50px;
+  }

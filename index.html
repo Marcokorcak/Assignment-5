@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="board-container">
+            <div class="cols">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="cols">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="cols">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+
+        <section id="grid-options-section">
+            <button id="add-row">Add Row</button>
+            <button id="add-column">Add Column</button>
+            <button id="delete-row">Delete Row</button>
+            <button id="delete-column">Delete Column</button>
+        </section>
+
+        <div id="options-container">
+            <form>
+
+            </form> 
+            <section id="option-single-container">
+                <input type="radio">
+                <label for="single-color-input">Color one box at a time: </label>
+                <input id="" class="color-input" name="single-color-input" type="text">
+            </section>
+
+            <section id="option-white-container">
+                <input type="radio">
+                <label for="white-color-input">Color all white boxes: </label>
+                <input id="" class="color-input" name="white-color-input" type="text">
+                <button id="fill-white">Fill White</button>
+            </section>
+
+            <section id="option-all-container">
+                <input type="radio">
+                <label for="all-color-input">Color all boxes: </label>
+                <input id="" class="color-input" name="all-color-input" type="text">
+                <button id="fill-all">Fill All</button>
+            </section>
+
+            <section id="option-dragged-container">
+                <input type="radio">
+                <label for="dragged-color-input">Color boxes that are dragged over: </label>
+                <input id="" class="color-input" name="dragged-color-input" type="text">
+            </section>
+
+            <section id="option-clear-container">
+                <button id="clear-all">Clear Board</button>
+            </section>
+        </div>
+    </body>
+</html>

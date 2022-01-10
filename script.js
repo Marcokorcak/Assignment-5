@@ -50,3 +50,16 @@ columnButtonDelete.addEventListener("click", () => {
         numColumns--
     }
 })
+
+// delete rows
+rowButtonDelete.addEventListener("click", () => {
+    allColumns = document.querySelectorAll(".cols")
+
+    if (numRows > 1) {
+        allColumns.forEach((column) => {
+            column.lastElementChild.remove()
+        })
+
+        numRows--;
+    }
+})

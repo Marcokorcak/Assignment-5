@@ -25,3 +25,20 @@ rowButtonAdd.addEventListener("click", () => {
     numRows++;
     addClickability()
 })
+
+// add columns
+columnButtonAdd.addEventListener("click", () => {
+    let column = document.createElement("div")
+    column.setAttribute("class", "cols")
+
+    for (let i = 0; i < numRows; i++){
+        let cell = document.createElement("div")
+        cell.setAttribute("class", "cell")
+        column.append(cell)        
+    }
+
+    board.append(column)
+    
+    numColumns++;
+    addClickability()
+})

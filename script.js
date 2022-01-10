@@ -93,3 +93,12 @@ allButtonFill.addEventListener("click", () => {
         box.style.backgroundColor = "blue"
     }
 })
+
+// clear board
+clearButton.addEventListener("click", () => {
+    let everySquare = document.querySelectorAll(".cell")
+    
+    for (let box of everySquare) {
+        box.style.backgroundColor = ""
+    }
+})

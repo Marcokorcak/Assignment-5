@@ -42,3 +42,11 @@ columnButtonAdd.addEventListener("click", () => {
     numColumns++;
     addClickability()
 })
+
+// delete columns
+columnButtonDelete.addEventListener("click", () => {
+    if (numColumns > 1) {
+        board.lastElementChild.remove()
+        numColumns--
+    }
+})

@@ -84,3 +84,12 @@ whiteButtonFill.addEventListener("click", () => {
         }
     }
 })
+
+// fill all
+allButtonFill.addEventListener("click", () => {
+    let everySquare = document.querySelectorAll(".cell")
+    
+    for (let box of everySquare) {
+        box.style.backgroundColor = "blue"
+    }
+})

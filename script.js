@@ -70,7 +70,7 @@ addClick()
 function addClick() {
     const everySquare = document.querySelectorAll(".cell");
     for (let box of everySquare) {
-        box.addEventListener("click", () => {box.style.backgroundColor = "red"})
+        box.addEventListener("click", () => {box.style.backgroundColor = "yellow"})
     }
 }
 
@@ -80,7 +80,7 @@ whiteButtonFill.addEventListener("click", () => {
     
     for (let i = 0; i < everySquare.length; i++) {
         if (everySquare[i].style.backgroundColor == "") {
-            everySquare[i].style.backgroundColor = "blue"
+            everySquare[i].style.backgroundColor = "green"
         }
     }
 })

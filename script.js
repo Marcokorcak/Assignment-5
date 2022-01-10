@@ -63,3 +63,13 @@ rowButtonDelete.addEventListener("click", () => {
         numRows--;
     }
 })
+
+// color one
+addClick()
+
+function addClick() {
+    const everySquare = document.querySelectorAll(".cell");
+    for (let box of everySquare) {
+        box.addEventListener("click", () => {box.style.backgroundColor = "red"})
+    }
+}

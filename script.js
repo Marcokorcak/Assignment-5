@@ -73,3 +73,14 @@ function addClick() {
         box.addEventListener("click", () => {box.style.backgroundColor = "red"})
     }
 }
+
+// fill white
+whiteButtonFill.addEventListener("click", () => {
+    let everySquare = document.querySelectorAll(".cell")
+    
+    for (let i = 0; i < everySquare.length; i++) {
+        if (everySquare[i].style.backgroundColor == "") {
+            everySquare[i].style.backgroundColor = "blue"
+        }
+    }
+})
